@@ -173,6 +173,8 @@
   .toggle-btn { background: transparent; border: none; color: var(--flame); cursor: pointer; font-family: var(--sans); font-size: 0.82rem; text-decoration: underline; padding: 0.65rem 0 0; }
   .toggle-body { display: none; margin-top: 0.7rem; padding-top: 0.7rem; border-top: 1px dashed var(--hair); font-size: 0.9rem; color: var(--ink-soft); line-height: 1.65; }
   .toggle-body.open { display: block; }
+  .toggle-body p { font-size: inherit; line-height: inherit; color: inherit; margin: 0 0 0.75rem; }
+  .toggle-body p:last-child { margin-bottom: 0; }
   .evtag { display: inline-block; margin-top: 0.9rem; font-family: var(--sans); font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; padding: 0.24rem 0.6rem; }
   .evtag.home { background: var(--chipA-bg); color: var(--chipA-fg); }
   .evtag.ground { background: var(--chipB-bg); color: var(--chipB-fg); }
@@ -484,7 +486,7 @@ const FLOW = [
     "q": "Which of these tells you most about how serious someone is?",
     "options": [
       "What they agreed to give up when nobody could force them",
-      "How loudly they announced the agreement to everyone watching",
+      "How loudly they announced the agreement to everyone who was watching",
       "How many people were standing in the room when they agreed",
       "Whether they looked confident and calm while they were speaking"
     ],
@@ -539,7 +541,7 @@ const FLOW = [
         "cls": "home",
         "label": "Evidence &middot; concessions on both sides"
       },
-      "toggle": "A Minute here is not sixty seconds. It is the signed record of what a meeting agreed, named after the place it was signed. Read the two quoted phrases again. Suspending is not ending, and the ANC chose that word on purpose, because it kept the option of going back. Look at what each side loses anyway. The ANC gives up the armed struggle, which was its main claim to be more than a political party. The government gives up emergency powers, which were how it had controlled the townships."
+      "toggle": "<p>Three agreements, each one giving up something. At Groote Schuur in May 1990, both sides record a commitment to stability and to peaceful negotiation. The government agrees to release political prisoners and let exiles come home. At Pretoria in August, the ANC announces it is suspending all armed actions. The government agrees to release prisoners by September, start the indemnity process and review the emergency in Natal. In September 1991 the National Peace Accord is signed by 27 organisations. It sets rules of conduct for parties, police and marches, and creates local committees to handle violence.</p><p>Now the wording. A \"Minute\" here is not sixty seconds. It is the signed record of what a meeting agreed, named after the place it was signed. \"Indemnity\" means a promise not to prosecute somebody for what they did before. Read the two quoted phrases again, because you will want them. \"Suspending all armed actions\" is not ending them. The ANC chose that word on purpose, because it kept the option of going back.</p><p>Look at what each side loses anyway. The ANC gives up the armed struggle, which was its main claim to be more than a political party. The government gives up emergency powers, which were how it had controlled the townships.</p>"
     },
     "terms": [
       {
@@ -565,7 +567,7 @@ const FLOW = [
   {
     "type": "narrative",
     "stage": "Act",
-    "html": "<div class=\"stage-tag\">The evidence</div><h2>1991: the Walls Come Down, and the Trust Breaks</h2><p><span class=\"key\">1991</span> is the year most people skip, and it carries three things worth marks.</p><p class=\"sort-prompt\">Tap the arrows to read all 3.</p><div class=\"car\" data-car=\"[&quot;<strong><span class=\\&quot;key\\&quot;>June 1991</span>.</strong> Parliament repealed the three pillars of apartheid: the <strong>Population Registration Act</strong>, the <strong>Group Areas Act</strong> and the <strong>Land Acts</strong>. Legal apartheid was over. The country it had built was not.&quot;, &quot;<strong><span class=\\&quot;key\\&quot;>July 1991</span>: Inkathagate.</strong> Newspapers revealed that the police had secretly funded Inkatha. The ANC now had proof that the government was both refereeing the match and backing one team.&quot;, &quot;<strong><span class=\\&quot;key\\&quot;>September 1991</span>: the National Peace Accord.</strong> Signed by 27 political organisations. It set rules of conduct for parties, police and marches, and created local committees to deal with violence.&quot;]\"><div class=\"car-prompt\" data-car-prompt></div><div class=\"car-frame\"><div class=\"car-count\" data-car-count></div><div class=\"car-body\" data-car-body></div></div><div class=\"car-nav\"><button class=\"btn-small\" data-car-prev>&larr;</button><span class=\"car-hint\" data-car-hint></span><div class=\"car-dots\"><button class=\"car-dot\" data-car-dot></button><button class=\"car-dot\" data-car-dot></button><button class=\"car-dot\" data-car-dot></button></div><button class=\"btn-small\" data-car-next>&rarr;</button></div></div>",
+    "html": "<div class=\"stage-tag\">The evidence</div><h2>1991: the Walls Come Down, and the Trust Breaks</h2><p><span class=\"key\">1991</span> is the year you may well skip, and it carries three things worth marks.</p><p class=\"sort-prompt\">Tap the arrows to read all 3.</p><div class=\"car\" data-car=\"[&quot;<strong><span class=\\&quot;key\\&quot;>June 1991</span>.</strong> Parliament repealed the three pillars of apartheid: the <strong>Population Registration Act</strong>, the <strong>Group Areas Act</strong> and the <strong>Land Acts</strong>. Legal apartheid was over. The country it had built was not.&quot;, &quot;<strong><span class=\\&quot;key\\&quot;>July 1991</span>: Inkathagate.</strong> Newspapers revealed that the police had secretly funded Inkatha. The ANC now had proof that the government was both refereeing the match and backing one team.&quot;, &quot;<strong><span class=\\&quot;key\\&quot;>September 1991</span>: the National Peace Accord.</strong> Signed by 27 political organisations. It set rules of conduct for parties, police and marches, and created local committees to deal with violence.&quot;]\"><div class=\"car-prompt\" data-car-prompt></div><div class=\"car-frame\"><div class=\"car-count\" data-car-count></div><div class=\"car-body\" data-car-body></div></div><div class=\"car-nav\"><button class=\"btn-small\" data-car-prev>&larr;</button><span class=\"car-hint\" data-car-hint></span><div class=\"car-dots\"><button class=\"car-dot\" data-car-dot></button><button class=\"car-dot\" data-car-dot></button><button class=\"car-dot\" data-car-dot></button></div><button class=\"btn-small\" data-car-next>&rarr;</button></div></div>",
     "terms": [
       {
         "t": "Population Registration Act",
@@ -685,7 +687,7 @@ const FLOW = [
         "cls": "ground",
         "label": "Evidence &middot; agreement in principle"
       },
-      "toggle": "A declaration of intent states where everyone wants to end up. It is not a plan for getting there. Notice how the quoted phrase is about the destination and says nothing about the route. That is what the five working groups were set up to fill, and it is where the talks broke down five months later."
+      "toggle": "<p>Nineteen delegations sat down and seventeen signed. They committed to one undivided South Africa with a single common citizenship. It would be free from apartheid and from any other discrimination or domination. They also committed to a new constitution and to a multi-party democracy with regular elections. An interim government would run the country while the constitution was written. Inkatha and the Bophuthatswana government did not sign.</p><p>Now the wording. \"Signatories\" are the parties who signed. \"An undivided South Africa with one nation sharing a common citizenship\" is the answer to the homelands. Millions had been made citizens of somewhere else. An interim government is a temporary one, holding office only until the permanent arrangement exists.</p><p>Notice what the document settles and what it does not. A declaration of intent states where everyone wants to end up, and it is not a plan for getting there. You should notice that the quoted phrase is all destination and no route. That gap is what the five working groups were set up to fill. It is where the talks broke down five months later.</p>"
     }
   },
   {
@@ -796,9 +798,9 @@ const FLOW = [
     "q": "How far does the 1992 referendum support the claim that leaders showed political will?",
     "options": [
       "Strongly, since De Klerk risked his own position on a vote he could have lost",
-      "Not at all, because the referendum was a safe vote he already knew he would win",
+      "Not at all, because the referendum was a safe vote he knew he would win",
       "Not at all, since only white voters took part and so the result meant nothing",
-      "Completely, because the referendum proved that the whole country now wanted a democracy"
+      "Completely, because the referendum proved that the whole country now wanted to be a democracy"
     ],
     "correct": 0,
     "explanation": "{opt0}, and the risk is the reason. {opt1} calls it safe. It wasn't: his party had just been losing by-elections. {opt2} wastes good evidence, because the vote did kill the claim that whites would never accept talks. The question asks how far, so completely and not at all are both too blunt."
@@ -807,7 +809,7 @@ const FLOW = [
     "type": "question",
     "stage": "Act",
     "level": "Weigh",
-    "q": "A learner writes that by mid 1992 the talks were going well because everyone had signed the Declaration of Intent. What is the flaw?",
+    "q": "Here is a claim: by mid 1992 the talks were going well, because everyone had signed the Declaration of Intent. What is the flaw?",
     "options": [
       "Signing settled the destination, and the talks then deadlocked over how to get there",
       "Nobody actually signed the Declaration of Intent, so the claim has no basis at all",
